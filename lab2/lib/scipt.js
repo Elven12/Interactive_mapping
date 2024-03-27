@@ -1,18 +1,18 @@
 var stations_add;
 
 var carIcon = L.icon({
-  iconUrl: '/lib/car-icon-png-4272.png',
+  iconUrl: 'lib/car-icon-png-4272.png',
   iconSize: [25, 30],
   iconAnchor: [12, 15],
 });
 
 var stationicon = L.icon({
-  iconUrl: '/lib/ev_0003-1024-903229441.png',
+  iconUrl: 'lib/ev_0003-1024-903229441.png',
   iconSize: [25, 30],
   iconAnchor: [12, 15],
 });
 var nearestIcon = L.icon({
-  iconUrl: '/lib/marker.png',
+  iconUrl: 'lib/marker.png',
   iconSize: [50, 50],
   iconAnchor: [25, 50],
 })
@@ -62,7 +62,7 @@ const point = L.layerGroup();
 point.addTo(map)
 
 
-$.getJSON("/lib/electric-vehicle-charging-stations.geojson", function (data) {
+$.getJSON("lib/electric-vehicle-charging-stations.geojson", function (data) {
   stations_add = data;
   L.geoJSON(data,{
     onEachFeature: function (feature, layer){
