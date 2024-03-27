@@ -10,4 +10,4 @@ Resource:
 
 https://docs.mapbox.com/help/tutorials/analysis-with-turf/
 https://leafletjs.com/examples/custom-icons/
-https://leafletjs.com/examples/layers-control/+
+https://leafletjs.com/examples/layers-control/
